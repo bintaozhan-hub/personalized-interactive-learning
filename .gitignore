@@ -1,0 +1,37 @@
+# === 用户个人数据 ===
+# user_wiki 中的用户档案（保留 README.md 和 .gitkeep）
+wiki/user_wiki/01_身份与角色/*.md
+wiki/user_wiki/02_价值观与信念/*.md
+wiki/user_wiki/03_底层思维模式/*.md
+wiki/user_wiki/04_技能与特长/*.md
+wiki/user_wiki/05_人际关系网络/*.md
+wiki/user_wiki/06_人生重大轨迹/*.md
+wiki/user_wiki/07_当下状态与近期事件/*.md
+wiki/user_wiki/user_index.md
+wiki/user_wiki/user_log.md
+
+# === 知识产出（用户学习过程中产生） ===
+wiki/book_wiki/index.md
+wiki/book_wiki/log.md
+wiki/book_wiki/*/
+wiki/research_wiki/*/
+wiki/course_wiki/*/
+
+# === 用户放入的原始文件 ===
+raw/book_raw/*
+raw/user_raw/*
+!raw/book_raw/.gitkeep
+!raw/user_raw/.gitkeep
+
+# === 本地配置 ===
+.claude/
+
+# === 会话记忆 ===
+memory/
+
+# === 系统文件 ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
