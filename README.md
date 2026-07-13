@@ -23,15 +23,60 @@ Claude Code 默认每次对话都是"初次见面"。你聊完一段，关了窗
 
 ## 📦 安装
 
+### 前置条件
+
+- 已安装 [Claude Code](https://docs.anthropic.com/en/docs/claude-code)（或 Codex）
+- 已安装 [Node.js](https://nodejs.org/) ≥ 18
+
+在终端输入 `claude` 能正常启动，就可以继续了。
+
+---
+
+### 方式一：一键安装（推荐）
+
 ```bash
 npx skills add bintaozhan-hub/personalized-interactive-learning
 ```
 
-或手动克隆：
+这个命令会自动把 5 个 skill 安装到 Claude Code 的 skills 目录。装完重启 Claude Code 就能用。
+
+---
+
+### 方式二：手动克隆
+
+如果你的网络环境不方便使用 `npx`，也可以直接 git clone：
 
 ```bash
-git clone https://github.com/bintaozhan-hub/personalized-interactive-learning.git .claude/skills/personalized-interactive-learning
+# 进入 Claude Code 的 skills 目录
+cd ~/.claude/skills/
+
+# 克隆本项目
+git clone https://github.com/bintaozhan-hub/personalized-interactive-learning.git personalized-interactive-learning
+
+# 重启 Claude Code 即可生效
 ```
+
+---
+
+### 验证安装
+
+打开 Claude Code，输入：
+
+```
+/help
+```
+
+在 skill 列表中看到 `life-interviewer`、`industry-research`、`course-learning`、`book-reading`、`knowledge-consultation` 就说明安装成功了。
+
+---
+
+### 开始使用
+
+推荐从 **life-interviewer** 开始，直接说：
+
+> "我想聊聊我的经历"
+
+AI 会带你从童年开始回溯人生经历，聊完后自动沉淀到个人档案。之后的学习 skill 都会读取这份档案来定制化内容——比如用你熟悉的行业举例、针对你的思维模式调整教学方式。
 
 ---
 
